@@ -6,15 +6,15 @@ const ComponentName = ({ data:{Products} }) => {
 
     return(
         <Layout>
-            <section style={{display:'flex',justifyContent:'space-around'}}>
+            <section id="product-section">
                 
             {
             Products.nodes.map((product) => {
                 return (
-                    <article key={product.key}>
+                    <article key={product.key} id="product-box" >
                         <h3>{product.title}</h3>
                         <img src={product.image.fluid.src} alt={product.title} width={200} height={200}></img>
-                        <p>{product.price}</p>
+                        <p><strong>Price: </strong>{product.price}</p>
                         <Link to={`/products/${product.slug}`}>More Info</Link>
                     </article>
                 )
@@ -32,6 +32,7 @@ export const query = graphql`
    Products: allContentfulProduct {
       nodes {
         id
+        title
         image {
           fluid {
             src

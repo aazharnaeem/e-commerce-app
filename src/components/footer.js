@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () =>{
     return(
 
-        <div id='fot-main'>
+       /*  <div id='fot-main'>
             
 
         <span className='fot' >
@@ -32,7 +32,32 @@ const Footer = () =>{
             <p>lorem ipsum dolor iset </p>
         </span>
 
-        </div>
+        </div> */
+        
+        <table width='100%'>
+            <tr>
+                <th>
+                    Contact Us
+                </th>
+                <th>
+                    About Us
+                </th>
+                <th>Services</th>
+            </tr>
+            <tr>
+                <td>
+                lorem ipsum dolor iset<br></br> 
+                </td>
+                <td>
+                lorem ipsum dolor iset <br></br> 
+                </td>
+                <td>
+                lorem ipsum dolor iset <br></br> 
+                </td>
+            </tr>
+
+        </table>
+
     );
 }
 export default Footer;

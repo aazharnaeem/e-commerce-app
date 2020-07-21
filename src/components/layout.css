@@ -7,17 +7,24 @@
   margin-top: 3px;
   float: right;
 }
-#fot-main{
-  background-color: powderblue;
-  display: table;
-  width: 100%;
-  margin-right: -5px;
-  border-top:solid black ;
-
+table{
+  border:1px solid black;
+  text-align: center;
+  background-color:powderblue;
 }
-.fot{
+#product-section{
+  
+  width: 100%;
+  margin-right: -10px;
+  border-top:solid black ;
+}
+#product-box{
+
+  border: solid black 0.5px;
   box-sizing: border-box;
   float: left;
-  padding: 10px;
+  margin: 20px;
   margin-right: 9.5px;
-  }
+  text-align: center;
+
+}
