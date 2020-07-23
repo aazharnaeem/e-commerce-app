@@ -6,10 +6,12 @@ const Header = () => {
     <div id='head-main'>
       
      <img src={wolflogo} width={40} style={{borderRadius:50}}></img>
-    <span id='head-btn'>
-    <Link to="/"><button>Home</button></Link>
-    <Link to ="/product"><button>Products</button></Link>
-    <Link to="/contact"><button>Contact</button></Link>
+    <span id='head-lnk'>
+    <Link to="/" className="lnk"><b>Home</b></Link>
+    <Link to ="/product" className="lnk"><b>Products</b></Link>
+    <Link to="/contact" className="lnk"><b>Contact</b></Link>
+    <Link to="/signup" className="lnk"><b>Signup</b></Link>
+    
     </span>
     </div>
   );

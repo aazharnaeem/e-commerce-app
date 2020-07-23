@@ -1,22 +1,32 @@
+
 #head-main{
-  border: thin black;
-  background-color:powderblue;
-  border-bottom: solid black;
+  background-color: rgb(91, 194, 219);
+  overflow: hidden;
+  padding: 4px;
+
 }
-#head-btn{
-  margin-top: 3px;
+#head-lnk{
+  margin-top: 7px;
   float: right;
+}
+.lnk{
+  text-decoration: none;
+  margin-right: 1px;
+  border: solid black;
+  padding: 3px;
+
 }
 table{
   border:1px solid black;
   text-align: center;
-  background-color:powderblue;
+  background-color: rgb(91, 194, 219);
+  overflow-x: auto;
+
 }
 #product-section{
-  
+
   width: 100%;
   margin-right: -10px;
-  border-top:solid black ;
 }
 #product-box{
 
@@ -26,5 +36,35 @@ table{
   margin: 20px;
   margin-right: 9.5px;
   text-align: center;
+  padding: 10px;
 
+}
+#product-template{
+    display:flex;
+    justify-content:center; 
+    flex-flow:column;
+    align-items:center;
+}
+#home-top{
+  background-image: url(../images/cover6.jpeg);
+  display: flex;
+  overflow: auto;
+  justify-content: space-between;
+  padding: 50px;
+
+}
+#home-top-first{
+  border: solid goldenrod;
+  justify-content:center;
+  margin: 20px;
+  padding: 50px;
+}
+#home2{
+  border: solid darkorange;
+}
+#home3{
+  border: solid brown;
+}
+#home4{
+  border: solid darkblue;
 }

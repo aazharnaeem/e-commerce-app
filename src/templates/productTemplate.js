@@ -4,10 +4,10 @@ const productTemplate = ({pageContext:{data}}) => {
     console.log(data);
     return (
         <Layout>
-            <section style={{display:'flex',justifyContent:'center', flexFlow:'column wrap',alignItems:'center'}}>
+            <section id="product-template" >
                 <h2>{data.title}</h2>
                 <img src={data.image.fluid.src} alt={data.title} />
-                <p>{data.price}</p>
+                <p><strong>Price:</strong>{data.price}</p>
                 <p>{data.info.info}</p>
             </section>
         </Layout>

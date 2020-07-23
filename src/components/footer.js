@@ -33,8 +33,9 @@ const Footer = () =>{
         </span>
 
         </div> */
-        
+        <footer>
         <table width='100%'>
+            <thead>
             <tr>
                 <th>
                     Contact Us
@@ -44,6 +45,8 @@ const Footer = () =>{
                 </th>
                 <th>Services</th>
             </tr>
+            </thead>
+            <tfoot>
             <tr>
                 <td>
                 lorem ipsum dolor iset<br></br> 
@@ -55,8 +58,10 @@ const Footer = () =>{
                 lorem ipsum dolor iset <br></br> 
                 </td>
             </tr>
+            </tfoot>
 
         </table>
+        </footer>
 
     );
 }
