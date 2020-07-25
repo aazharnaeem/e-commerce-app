@@ -2,18 +2,33 @@
 #head-main{
   background-color: rgb(91, 194, 219);
   overflow: hidden;
-  padding: 4px;
+}
+a{
+  color: black;
+}
+.head-logo{
+  padding-top: 10px;
+  display: flex;
+  float: left;
 
 }
+#logo-txt{
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
 #head-lnk{
-  margin-top: 7px;
   float: right;
+  font-size: 15px;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 .lnk{
   text-decoration: none;
   margin-right: 1px;
-  border: solid black;
-  padding: 3px;
+  border-right: 1.8px solid;
+  padding-right: 3px;
+
 
 }
 table{
@@ -21,8 +36,27 @@ table{
   text-align: center;
   background-color: rgb(91, 194, 219);
   overflow-x: auto;
-
 }
+.signup-form{
+  align-content: center;
+  border: 1px solid green;
+  background: #86f4c1;
+  display: block;
+  position: relative;
+  padding: 20px;
+}
+.frm{
+  box-sizing: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.signup-btn{
+  border-style: hidden;
+  background-color: tomato;
+  margin: 5px;
+  color: white;
+}
+
 #product-section{
 
   width: 100%;
@@ -45,6 +79,7 @@ table{
     flex-flow:column;
     align-items:center;
 }
+
 #home-top{
   background-image: url(../images/cover6.jpeg);
   display: flex;

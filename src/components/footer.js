@@ -3,35 +3,25 @@ import React from 'react';
 const Footer = () =>{
     return(
 
-       /*  <div id='fot-main'>
-            
+        /* <div className="footer">
+            <div className="footer-content">
+                <div className="footer-section-contact">
+                    <strong>sldjbf</strong>
+                </div>
+                <div className="footer-section-about">
+                <strong>sldjbf</strong>
 
-        <span className='fot' >
-            <h3>Contact us</h3>
-            <p>lorem ipsum dolor iset </p>
-            <p>lorem ipsum dolor iset </p>
-        </span>
-        <span className='fot'>
-            <h3>About us</h3>
-            <p>lorem ipsum dolor iset </p>
-            <p>lorem ipsum dolor iset </p>
-        </span>
-        <span className='fot'>
-            <h3>Customer Service</h3>
-            <p>lorem ipsum dolor iset </p>
-            <p>lorem ipsum dolor iset </p>
-        </span>
-        <span className='fot'>
-            <h3>News Letter</h3>
-            <p>lorem ipsum dolor iset </p>
-            <p>lorem ipsum dolor iset </p>
-        </span>
-        <span className='fot'>
-            <h3>lorem ipsum</h3>
-            <p>lorem ipsum dolor iset </p>
-            <p>lorem ipsum dolor iset </p>
-        </span>
+                </div>
+                
+                <div className="footer-section-links">
+                <strong>sldjbf</strong>
 
+                </div>
+                <div className="footer-section-bottom"> 
+                <p>Copy right</p>
+                </div>
+            </div>
+                         <hr></hr>          
         </div> */
         <footer>
         <table width='100%'>

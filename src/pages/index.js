@@ -8,9 +8,9 @@ const Home = () => {
       <div id="home-top">
       {/* <img src={cover4} alt="img" style={{width:'100%', height:'450px'}}></img> */}
       <div id="home-top-first">
-      <h3>Welcome Text</h3>
-      <p>lorem ipsum dolor esat</p>
-      <button>Sign up</button>
+      <h3>Shopify</h3>
+      <p>Everything you need to buy</p>
+      <button className=''>Sign up</button>
       </div>
       </div>
       <div id="home2">
