@@ -10,6 +10,7 @@ a{
   padding-top: 10px;
   display: flex;
   float: left;
+  margin-left: 5px;
 
 }
 #logo-txt{
@@ -95,7 +96,23 @@ table{
   padding: 50px;
 }
 #home2{
-  border: solid darkorange;
+  border: solid black 1px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.dis-offer{
+  background-color: rgb(195, 191, 191);
+  color: white ;
+  padding: 50px;
+  text-align: justify;
+  height: 250;
+}
+.dis-btn{
+  border: none;
+  border-radius: 5px;
 }
 #home3{
   border: solid brown;

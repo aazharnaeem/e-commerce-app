@@ -1,6 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 //import cover4 from "../images/cover.jpg";
+import shirt from '../images/shirt1.jpg'
+import shoe from '../images/shoe1.jpg'
+import { Link } from 'gatsby'
+
 
 const Home = () => {
   return(
@@ -13,18 +17,21 @@ const Home = () => {
       <button className=''>Sign up</button>
       </div>
       </div>
+{/*       <h2 style={{textAlign:'center'}}>Welcome to shpify</h2> */}
       <div id="home2">
-        <h1>Home 2</h1>
-        <h1>Home 2</h1>
-      </div>
-      <div id="home3">
-        <h1>Home 3</h1>
-        <h1>Home 3</h1>
-      </div>
-      <div id="home4">
-        <h1>Home 4</h1>
-        <h1>Home 4</h1>
-      </div>
+        <div className='shirt-box'>
+          <img src={shirt} alt='img' height='250'></img>
+        </div>
+        <div className='dis-offer'>
+          <h1>Get 70% off</h1>
+          <Link to='/product'><button className='dis-btn'>Explore Now</button></Link>
+
+        </div>
+        <div className='footwear'>
+        <img src={shoe} alt='img' height='250'></img>
+
+        </div>
+        </div>
 
     </Layout>
 )
