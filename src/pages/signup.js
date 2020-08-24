@@ -5,36 +5,22 @@ import {Link} from 'gatsby'
 const signup = ()=>{
     return(
         <Layout>
-        <div className='signup-form'>
-        <form className='frm'>
-            <h1>Sign up</h1><br></br>
-            <label>Username:</label><br></br>
-            <input type='text'></input><br></br>
-            <label>Email</label><br></br>
-            <input type='emial'></input><br></br>
-            <label>Password</label><br></br>
-            <input type='password'></input><br></br>
-            <button className='signup-btn'>Submit</button><Link to='/login'><button className='signup-btn'>Login</button></Link>
-            {/* <ul>
-                <li>
-                    <h1>Sign up</h1>
-                </li>
-                <li>
-                    <label>Username</label>
-                </li>
-                <li><input type='text'></input></li>
-                <li>
-                    <label>Username</label>
-                </li>
-                <li><input type='text'></input></li>
-                <li>
-                    <label>Username</label>
-                </li>
-                <li><input type='text'></input></li>
-            </ul> */}
+            <div className="signup-form">
+            <form class="login-form">
+               <h2>Sign In</h2>
+               <p>Sign In to your account</p>
+               <hr />
 
-        </form>
-        </div>
+               <label>Email Address: *</label><br />
+               <input id="emailAddress" type="email" placeholder="Enter Email"/><br />
+               <label>Password: *</label><br />
+               <input id="password" type="password" placeholder="Enter Password"/> <br />
+               <br />
+               <a href="./contact.html"><p>Forgot your Password?</p></a>
+               <a href="../index.html"><button >LOGIN</button></a>
+           </form>
+
+            </div>
         </Layout>
     )
 

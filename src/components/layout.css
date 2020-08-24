@@ -15,17 +15,15 @@ a{
   justify-content: space-between;
 }
 
-#logo-txt{
-  margin-left: 10px;
-  margin-top: 10px;
-  
-}
 #head-lnk{
-        border: solid black 1px;
+      border: solid black 1px;
 	    background-color: white;
 	    width: 100%;
       box-sizing: border-box;
       padding: 15px;
+}
+.cart-head{
+  float: right;
 }
 .lnk{
   margin: 10px;
@@ -66,26 +64,30 @@ footer{
   padding: 10px;
   box-sizing: border-box;
 }
-.signup-form{
-  align-content: center;
-  border: 1px solid green;
-  background: #86f4c1;
-  display: block;
-  position: relative;
-  padding: 20px;
-}
-.frm{
-  box-sizing: 10px;
-  padding: 10px;
-  text-align: center;
-}
-.signup-btn{
-  border-style: hidden;
-  background-color: tomato;
-  margin: 5px;
-  color: white;
+li{
+  list-style: none;
 }
 
+/*------Product Page---------*/
+
+.product-navbar{
+  display: flex;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  border: solid black 1px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: none;
+}
+.product-navbar>li{
+  list-style: none;
+  padding: 10px;
+  border-right: solid black 1px;
+}
+.product-navbar>li:hover{
+  background-color: rgb(221, 218, 218);
+}
 #product-section{
   width: 100%;
   margin-right: -10px;
@@ -107,7 +109,7 @@ footer{
     flex-flow:column;
     align-items:center;
 }
-
+/*--------Home Page-----------*/
 #home-top{
   background-image: url(../images/cover.jpg);
   display: flex;
@@ -147,6 +149,7 @@ footer{
 .news-letter>input,button{
   border: solid 1px black;
 }
+
 .dis-offer{
   background-image: url(../images/shirt1.jpg);
   background-color: rgb(195, 191, 191);
@@ -162,13 +165,30 @@ footer{
 }
 
 
+.cate{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.cat-item{
+
+  box-shadow:1px 1px;
+  margin: 2px;
+}
+.cat-item:hover{
+  border-bottom: solid black 2px;
+}
 .ind-main{
   width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap; 
 }
+
 .ind-right{
+
   margin: 2px;
   margin-top:6.3px ;
   float: right;
@@ -181,4 +201,35 @@ transition: transform 1.5s ease;
 }
 .ind1:hover, .ind2:hover, .ind3:hover, .ind4:hover, .ind5:hover{
   transform: scale(0.9);
+}
+/*--------Contact Page----------*/
+.contact-page{
+  text-align: center;
+}
+
+/*------------Signup Page-------*/
+
+.signup-form{
+  border: solid black 1px;
+  box-sizing: border-box;
+  margin: auto;
+  background-image: url(../images/signin.jpeg);
+}
+.login-form{
+  background-color: white;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30%;
+  padding: 10px;
+}
+.login-form>a>button{
+  border: solid black 1px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  width: 100%;
 }
