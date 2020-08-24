@@ -1,42 +1,70 @@
-
+*{
+  font-family: Consolas,monaco,monospace; 
+}
+/*------Header--------*/
 #head-main{
-  background-color: rgb(91, 194, 219);
+  width: 100%;
   overflow: hidden;
 }
 a{
   color: black;
 }
 .head-logo{
-  padding-top: 10px;
+  background-color: #efefef;
   display: flex;
-  float: left;
-  margin-left: 5px;
-
+  justify-content: space-between;
 }
+
 #logo-txt{
   margin-left: 10px;
   margin-top: 10px;
   
 }
 #head-lnk{
-  float: right;
-  font-size: 15px;
-  padding-top: 10px;
-  margin-top: 10px;
+        border: solid black 1px;
+	    background-color: white;
+	    width: 100%;
+      box-sizing: border-box;
+      padding: 15px;
 }
 .lnk{
-  text-decoration: none;
-  margin-right: 1px;
-  border-right: 1.8px solid;
-  padding-right: 3px;
-
+  margin: 10px;
+  font-size: 20px;
 
 }
-table{
-  border:1px solid black;
-  text-align: center;
-  background-color: rgb(91, 194, 219);
-  overflow-x: auto;
+.search-bar{
+  box-sizing: border-box;
+  margin: 30px;
+  flex:1;
+  text-align: end;
+}
+.search-bar>input{
+  border: none;
+}
+.search-btn{
+  border: none;
+  padding: 5px;
+}
+.search-btn:Hover{
+  opacity: 0.5;
+}
+
+/*-------Footer--------*/
+footer{
+  
+
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-top:solid 1px black ;
+}
+.fot{
+  opacity: 0.6;
+  flex: 1 ;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .signup-form{
   align-content: center;
@@ -59,15 +87,14 @@ table{
 }
 
 #product-section{
-
   width: 100%;
   margin-right: -10px;
+  display: flex;
 }
 #product-box{
 
   border: solid black 0.5px;
   box-sizing: border-box;
-  float: left;
   margin: 20px;
   margin-right: 9.5px;
   text-align: center;
@@ -82,41 +109,76 @@ table{
 }
 
 #home-top{
-  background-image: url(../images/cover6.jpeg);
+  background-image: url(../images/cover.jpg);
   display: flex;
   overflow: auto;
   justify-content: space-between;
   padding: 50px;
 
 }
+.pun{
+  text-align: center;
+  font-size: 30px;
+}
+
 #home-top-first{
-  border: solid goldenrod;
+  border: solid  black;
   justify-content:center;
   margin: 20px;
   padding: 50px;
 }
+.sign-up{
+  border: oldlace;
+}
 #home2{
-  border: solid black 1px;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 5px;
+  width: 100%;
 }
-
+.news-letter{
+  font-size: 15px;
+  width: 100%;
+  box-sizing:border-box;
+  text-align: center;
+  margin: 5px;
+} 
+.news-letter>input,button{
+  border: solid 1px black;
+}
 .dis-offer{
+  background-image: url(../images/shirt1.jpg);
   background-color: rgb(195, 191, 191);
   color: white ;
   padding: 50px;
   text-align: justify;
   height: 250;
+  width: 450px;
 }
 .dis-btn{
   border: none;
   border-radius: 5px;
 }
-#home3{
-  border: solid brown;
+
+
+.ind-main{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; 
 }
-#home4{
-  border: solid darkblue;
+.ind-right{
+  margin: 2px;
+  margin-top:6.3px ;
+  float: right;
+}
+.ind-both{
+  display: flex;
+}
+.ind1,.ind2,.ind3,.ind4,.ind5{ 
+transition: transform 1.5s ease;
+}
+.ind1:hover, .ind2:hover, .ind3:hover, .ind4:hover, .ind5:hover{
+  transform: scale(0.9);
 }

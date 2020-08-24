@@ -1,13 +1,12 @@
 import React from "react"
 import { graphql,Link} from "gatsby"
 import Layout from '../components/layout'
-const ComponentName = ({ data:{Products} }) => {
+const Product = ({ data:{Products} }) => {
     //console.log(Products);
 
     return(
         <Layout>
-            <section id="product-section">
-                
+            <section id="product-section">             
             {
             Products.nodes.map((product) => {
                 return (
@@ -45,5 +44,4 @@ export const query = graphql`
   }
 `
 
-export default ComponentName
-
+export default Product

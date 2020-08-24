@@ -1,56 +1,58 @@
 import React from 'react';
-
+import {Link} from 'gatsby'
 const Footer = () =>{
     return(
-
-        /* <div className="footer">
-            <div className="footer-content">
-                <div className="footer-section-contact">
-                    <strong>sldjbf</strong>
-                </div>
-                <div className="footer-section-about">
-                <strong>sldjbf</strong>
-
-                </div>
-                
-                <div className="footer-section-links">
-                <strong>sldjbf</strong>
-
-                </div>
-                <div className="footer-section-bottom"> 
-                <p>Copy right</p>
-                </div>
-            </div>
-                         <hr></hr>          
-        </div> */
         <footer>
-        <table width='100%'>
-            <thead>
-            <tr>
-                <th>
-                    Contact Us
-                </th>
-                <th>
-                    About Us
-                </th>
-                <th>Services</th>
-            </tr>
-            </thead>
-            <tfoot>
-            <tr>
-                <td>
-                lorem ipsum dolor iset<br></br> 
-                </td>
-                <td>
-                lorem ipsum dolor iset <br></br> 
-                </td>
-                <td>
-                lorem ipsum dolor iset <br></br> 
-                </td>
-            </tr>
-            </tfoot>
+            <div class="fot">
+           <Link to="/"><h3>About Shoify</h3></Link>
+           <p>Even the all-powerful Pointing has no 
+               control about the blind texts it is an almost
+                unorthographic life</p>
 
-        </table>
+       </div>
+       <hr/>
+       <div class="fot">
+           <ul>
+            <Link to="/"> <h3> CUSTOMER CARE</h3></Link>
+               <li>CONTACT</li>
+               <li>RETURNS/EXCHANGE</li>
+               <li>GIFT VOUCHER</li>
+               <li>WISH LIST</li>
+               <li>SPECIAL</li>
+               <li>CUSTOMER SERVICES</li>
+               <li>SITE MAPS</li>
+           </ul>
+       </div>
+       <hr/>
+       <div class="fot">
+        <ul>
+            <Link to="/about"> <h3> INFORMATION</h3></Link>
+            <li>ABOUT US</li>
+            <li>DELIVERY INFORMATION</li>
+            <li>PRIVACY POLICY</li>
+            <li>SUPPORT</li>
+            <li>ORDER TRACKING</li>
+        </ul>
+    </div>
+    <hr/>
+    <div class="fot">
+           <ul>
+            <Link to="/"> <h3> NEWS</h3></Link>
+               <li>BLOG</li>
+               <li>PRESS</li>
+               <li>EXIBITIONS</li>
+           </ul>
+    </div>
+    <hr/>
+    <div class="fot">
+        <ul>
+            <Link to="/contact"><h3>CONTACT INFORMATION</h3></Link>
+
+            <li>xyz street Karachi</li>
+            <li>+1234568766</li>
+            <li>azharnaeem76@gmail.com</li>
+        </ul>
+    </div>
         </footer>
 
     );
