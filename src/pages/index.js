@@ -1,69 +1,65 @@
 import React from "react"
+import {Link} from 'gatsby'
 import Layout from "../components/layout"
-import pro from '../images/pro15.png'
-import shoe from '../images/shoe1.jpg'
-import { Link } from 'gatsby'
-import img1 from '../images/ind1.png'
-import img2 from '../images/ind2.png'
-import img3 from '../images/ind3.png'
-import img4 from '../images/ind4.png'
-import img5 from '../images/ind5.png'
-import meas from '../images/category/measuring tools.png'
-import tablets from '../images/category/tablets.png'
-import games from '../images/category/games.png'
-import bookshelf from '../images/category/bookshelf.png'
-import mobiles from '../images/category/mobiles.png'
-import giftcards from '../images/category/giftcards.png'
-import sports from '../images/category/fitness.png'
-import Tv from '../images/category/Tv.png'
-
+import cover from '../images/cover1.jpg'
+import cover2 from '../images/home-cover2.png'
+import Category from '../components/HomeComponent/category'
+import {Collection} from '../components/HomeComponent/Collection'
+import Gift from '../images/gift-icon.png'
+import Globe from '../images/globe-icon.png'
+import star from '../images/star-icon.png'  
 const Home = () => {
   return(
     <Layout>
-      <div id="home-top">
-      <div id="home-top-first">
-      <h3>Shopify</h3>
-      <p>Everything you need to buy</p>
-      <Link to="signup"><button className='sign-up'>Sign up</button></Link>
+      {/*Cover-Section */}
+      <div className="cover">
+        <img src={cover} alt="Cover"></img>
+        <div className="cover-cont">
+        <h2>HUGE SALE UP TO 80% OFF</h2>
+        <br/>
+        <p>DIAL UP THE GLAMOUR IN AN ELEGANT COCKTAIL DRESS</p>
+        <br/>
+        <button> VIEW COLLECTIONS</button>
+        </div>
+      </div>
+
+    <div className="info">
+      <h2>WE ARE ELEGANT</h2>
+      <p><em> Elegance isn't solely defined bywhat you wear. It's how you carry yourself.</em></p>
+      <div className="info-sub">
+      <div className="sub-inf">
+        <img src={Gift} alt="Icons"></img>
+        <h4>BEAUTIFUL PRODUCTS</h4>
+        <p>I never look at other people's work. My mind has to be completely focused on my own illusions. It's a philosophy of life. A practice with no end</p>
+      </div>
+      <div className="sub-inf">
+      <img src={Globe} alt="Icons"></img>
+
+        <h4>FAST DELIVERY</h4>
+        <p>If you do this, something will change, what will change is that you will change, your life will change, and if you can change you, you can perhaps change the world.</p>
+      </div>
+      <div className="sub-inf">
+      <img src={star} alt="Icons"></img>
+        <h4>100% SATISFACTION</h4>
+        <p>I've always thought of the T-shirt as the Alpha and Omega of the fashion alphabet. I like the things around me to be beautiful and slightly dreamy.</p>
       </div>
       </div>
-      <div class="pun">
-       <p><strong>It started with a simple idea: Create quality, well-designed products that I wanted myself.</strong></p>
-   </div>
-    <div id="home2">
-        <div className='shirt-box'>
-          <img src={pro} alt='img' height='250' width='100%'></img>
+    </div>
+    <hr style={{opacity:0.1}}/>
+        <Collection/>
+        <div  style={{textAlign:"center"}}>
+        <Link to="/product"><button id="pro-btn" >
+          SEE ALL PRODUCTS
+        </button>
+        </Link>
         </div>
-        <div className='dis-offer'>
-          <h1>Get 70% off</h1>
-          <Link to='/product'><button className='dis-btn'>Explore Now</button></Link>
+
+        <div>
+          <img src={cover2}></img>          
         </div>
-        <div className='footwear'>
-        <img src={shoe} alt='img' height='250' width='100%'></img>
-        </div>
-        </div>
-        <h3 >Category</h3>
-        <div className="cate">
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={meas} width={150} title="Measuring instruments"></img></Link></div>
-          <div className='cat-item'><Link to='/product'> <img alt="img"  src={tablets} width={150} title="Tablets"></img></Link></div>
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={games} width={150} title="Games"></img></Link></div>
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={bookshelf} width={150} title="Bookshelf"></img></Link></div>
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={mobiles} width={150} title="Mobiles"></img></Link></div>
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={giftcards} width={150} title="GiftCards"></img></Link></div>
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={sports} width={150} title="Sports & Fitness"></img></Link></div>
-          <div className='cat-item'><Link to='/product'><img  alt="img" src={Tv}  width={150} title="Tv & appliances"></img></Link></div>
-        </div>
-        <div className="ind-main">
-          <div className="ind1"><Link to="/product"><img src={img1} alt="img"></img></Link> </div>
-          <div className="ind-right">
-          <div className="ind2"> <Link to="/product"><img src={img2} alt="img"></img></Link></div>
-          <div className="ind3"><Link to="/product"><img src={img3} alt="img"></img></Link></div>
-          <div className="ind-both">
-          <div className="ind4"> <Link to="/product"> <img src={img4} alt="img"></img></Link></div>
-          <div className="ind5"> <Link to="/product"> <img src={img5} alt="img"></img></Link></div>
-        </div>
-        </div>
-        </div>
+
+        <Category/>
+        
         <div className="news-letter">
           <h3>NEWS LETTER</h3>
           <p>Get timely updates from your favourite product</p>

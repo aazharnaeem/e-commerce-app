@@ -17,7 +17,7 @@ const Product = ({ data:{Products} }) => {
                         <img src={product.image.fluid.src} alt={product.title} width={200} height={200}></img>
                         <h3>{product.title}</h3>
                         <p><strong>Price: </strong>{product.price}</p>
-                        <Link to={`/products/${product.slug}`}>More Info</Link>
+                        <Link to={`/products/${product.slug}`} style={{color:"black"}} >More Info</Link>
                     </article>
                 )
         })
