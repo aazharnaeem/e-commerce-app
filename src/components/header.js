@@ -1,6 +1,14 @@
-import React from "react"
+import React,{useContext} from "react"
 import {Link} from 'gatsby'
+import CounterContext from '../context/counterContext'
+
+
+
 const Header = () => {
+  
+  let items = useContext(CounterContext);
+  // console.log(item_count+"head")
+  
   return(
     <div id='head-main'>
       <div className="head-logo">
@@ -11,9 +19,8 @@ const Header = () => {
       <Link to="/aboutus" className="lnk"><b>About</b></Link>
       <Link to="/contact" className="lnk"><b>Contact</b></Link>
       <Link to ="/product" className="lnk"><b>Shop</b></Link>
-  
-      <span className="cart-head">
-       <strong style={{color: "#efefef"}}>  &#128722;CART[<output>0</output>]</strong>
+      <span className="cart-head" role="img" >
+  <Link to="/cart">  <strong style={{color: "#efefef"}}>  &#128722;CART[<output>{items.count}</output>]</strong></Link>
       </span>
 
 

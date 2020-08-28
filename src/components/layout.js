@@ -4,10 +4,9 @@ import Footer from './footer'
 import "./layout.css"
 
 const Layout = ({children}) => {
-  ///console.log(props)
   return(
    <>
-    <Header/>
+    <Header />
   <main>{children}</main>
     <Footer/>
     </>

@@ -55,7 +55,7 @@ const Home = () => {
         </div>
 
         <div>
-          <img src={cover2}></img>          
+          <img src={cover2} alt="Cover-image"></img>          
         </div>
 
         <Category/>
@@ -66,8 +66,9 @@ const Home = () => {
           <input type="email" placeholder="Enter your Email"  size="50"/>
           <button>Subscribe</button>
         </div>
-
     </Layout>
 )
 }
+
+
 export default Home

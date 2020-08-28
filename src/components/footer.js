@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 const Footer = () =>{
     return(
         <footer>
-            <div class="fot">
+            <div className="fot">
            <Link to="/"><h3>About Shoify</h3></Link>
            <p>Even the all-powerful Pointing has no 
                control about the blind texts it is an almost
@@ -11,7 +11,7 @@ const Footer = () =>{
 
        </div>
        <hr/>
-       <div class="fot">
+       <div className="fot">
            <ul>
             <Link to="/"> <h3> CUSTOMER CARE</h3></Link>
                <li>CONTACT</li>
@@ -24,7 +24,7 @@ const Footer = () =>{
            </ul>
        </div>
        <hr/>
-       <div class="fot">
+       <div className="fot">
         <ul>
             <Link to="/about"> <h3> INFORMATION</h3></Link>
             <li>ABOUT US</li>
@@ -35,7 +35,7 @@ const Footer = () =>{
         </ul>
     </div>
     <hr/>
-    <div class="fot">
+    <div className="fot">
            <ul>
             <Link to="/"> <h3> NEWS</h3></Link>
                <li>BLOG</li>
@@ -44,7 +44,7 @@ const Footer = () =>{
            </ul>
     </div>
     <hr/>
-    <div class="fot">
+    <div className="fot">
         <ul>
             <Link to="/contact"><h3>CONTACT INFORMATION</h3></Link>
 
