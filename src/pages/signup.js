@@ -1,23 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Layout from '../components/layout'
+import {Link} from 'gatsby'
 
-const signup = ()=>{
+
+
+const Signup = ()=>{
+
+    let [users, setusers] = useState({
+        username:"",
+            email:"",
+             Password: "",
+    })
+
+    const changeHandler=(e)=>{
+        // console.log(e.target.value)
+        const value =e.target.value;
+        setusers({
+        ...users,
+        [e.target.name]: value
+        })
+    }
+
+    // console.log(users.email+"         Email")
+   
+    const submit=()=>{
+        alert("WELCOME::"+users.username+"    Thank you for choosing MyShop"+"   Enjoy Shopping with us")
+        setusers({
+            username:"",
+            email:"",
+            Password:""
+        })
+    }
     return(
         <Layout>
             <div className="signup-form">
-            <form class="login-form">
+            <div class="login-form">
                <h2>Sign In</h2>
                <p>Sign In to your account</p>
                <hr />
 
-               <label>Email Address: *</label><br />
-               <input id="emailAddress" type="email" placeholder="Enter Email"/><br />
-               <label>Password: *</label><br />
-               <input id="password" type="password" placeholder="Enter Password"/> <br />
+                <h3>User Name: *</h3>
+                <input  type="text" placeholder="Enter User Name" name="username" required value={users.username} onChange={changeHandler}/>
+               <h3>Email Address: *</h3><br />
+               <input  type="email" placeholder="Enter Email" name="email" required value={users.email} onChange={changeHandler}/><br />
+               <h3>Password: *</h3><br />
+               <input  type="password" placeholder="Enter Password" name="Password" required value={users.Password}  onChange={changeHandler}/> <br />
                <br />
-               <a href="./contact.html"><p>Forgot your Password?</p></a>
-               <a href="../index.html"><button >LOGIN</button></a>
-           </form>
+              <Link to="/contact"><p style={{color:"black",fontSize:"10px",textDecoration:"underline"}}>Need Help?</p></Link>
+              <button className="login-form-button" onClick={submit}>Signup</button>
+           </div>
 
             </div>
         </Layout>
@@ -25,4 +56,4 @@ const signup = ()=>{
 
 }
 
-export default signup;
+export default Signup;

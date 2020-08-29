@@ -18,10 +18,12 @@ const Header = () => {
       <Link to="/" className="lnk"><b>Home</b></Link>
       <Link to="/aboutus" className="lnk"><b>About</b></Link>
       <Link to="/contact" className="lnk"><b>Contact</b></Link>
+      <Link to="/blog" className="lnk"><b>Blog</b></Link>
       <Link to ="/product" className="lnk"><b>Shop</b></Link>
+      <Link to ="/signup" className="lnk"><b>SignIn</b></Link>
       <span className="cart-head" role="img" >
-  <Link to="/cart">  <strong style={{color: "#efefef"}}>  &#128722;CART[<output>{items.count}</output>]</strong></Link>
-      </span>
+  <strong style={{color: "#efefef"}}>  &#128722;CART[<output>{items.count}</output>]</strong>
+  </span>
 
 
       </div>

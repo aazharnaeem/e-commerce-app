@@ -8,45 +8,57 @@ const Cart =()=>{
         return(
         <div className="product-right">
                 <h1>Shopping Cart</h1>
-                <table border="1px">
+                <hr />
+                <table>
+                    <tbody>
                     <tr>
                         <td>Items:</td>
                         <td>{abc.count}</td>
                     </tr>
                     <tr>
+                        <td colSpan="2"><hr/></td>
+                    </tr>
+                    <tr>
                         <td>Price</td>
-                        <td>Product</td>
+                        <td>${abc.price}</td>
                     </tr>
                     <tr>
-                        <td>Shipment</td>
-                        <td>Product</td>
+                    <td colSpan="2"><hr/></td>
                     </tr>
                     <tr>
-                        <td>Product</td>
-                        <td>Product</td>
+                        <td>SubTotal Price</td>
+                        <td>${abc.subTotalPrice}.00</td>
                     </tr>
                     <tr>
-                        <td>Product</td>
-                        <td>Product</td>
+                    <td colSpan="2"><hr/></td>
                     </tr>
                     <tr>
-                        <td>Product</td>
-                        <td>Product</td>
+                        <td>Eco Tac(-2.00)</td>
+                        <td>${abc.EcoTax}.00</td>
                     </tr>
                     <tr>
-                        <td>Product</td>
-                        <td>Product</td>
+                    <td colSpan="2"><hr/></td>
                     </tr>
                     <tr>
-                        <td>
-                            total:
+                        <td>VAT 20%</td>
+                        <td>${abc.Vat}.00</td>
+                    </tr>
+                    <tr>
+                    <td colSpan="2"><hr/></td>
+                    </tr>
+                    <tr>
+                        <td>Total Price</td>
+                        <td>${abc.totalprice}.00</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colSpan="2">
+                        <button className="cart-out">Check OUT</button>
                         </td>
-                        <td>
-                            $---
-                        </td>
                     </tr>
-
-                </table>
+                    </tfoot>
+               </table>
                 
 
             </div>

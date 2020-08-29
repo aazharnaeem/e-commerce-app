@@ -247,7 +247,7 @@ transition: transform 1.5s ease;
   width: 30%;
   padding: 10px;
 }
-.login-form>a>button{
+.login-form-button{
   border: solid black 1px;
   font-size: 20px;
   background-color: black;
@@ -255,10 +255,70 @@ transition: transform 1.5s ease;
   padding: 5px;
   cursor: pointer;
   width: 100%;
+  margin: 2px;
+}
+.login-form-button:hover{
+  color:#202020;
+  background-color: #efefef;
 }
 
+
+.login-form>input{
+  width: 100%;
+  box-sizing: border-box;
+}
 /*-----------Abput Page-------*/
 #abt{
   font-size: 25px;
   text-align: justify;
+}
+
+/*---------Shopping Cart-----------*/
+.cart-out{
+  width: 100%;
+  background-color: black;
+  font-size: 20px;
+  margin-top: 10px;
+ color: white;
+}
+
+.cart-add{
+  background-color: #202020;
+  padding: 5px;
+  color: #efefef;
+  margin-top: 10px;
+}
+.cart-add:hover{
+  background-color: #efefef;
+  color: #202020;
+
+}
+
+/*-------Blog Sider--------*/
+.blog-side{
+  text-align: justify;
+}
+/*-------Blog Main--------*/
+.blog-main{
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+.blog-content{
+  flex: 1;
+  padding: 10px 30px 0px 60px;
+  text-align: justify;
+}
+.blogs{
+  color: #202020;
+}
+
+.blogs>p{
+  font-size:13px;
+}
+.blog-main-sider{
+  flex: 1;
+  float: right;
+  padding: 10px;
+  box-sizing: content-box;
 }
