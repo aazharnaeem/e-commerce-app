@@ -9,11 +9,9 @@ import giftcards from './category images/giftcards.png'
 import sports from './category images/fitness.png'
 import Tv from './category images/Tv.png'
 
-const Category=(props)=>{
-  console.log(props.name)
+const Category=()=>{
   return(
     <div id="cat-main">
-    {props.name}
         <h1 >Category:</h1>
         <div className="cate">
           <div className='cat-item'><Link to='/product'><img  alt="img" src={meas} width={150} title="Measuring instruments"></img></Link></div>
