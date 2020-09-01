@@ -58,7 +58,7 @@ const Home = () => {
           <img src={cover2} alt="Cover-image"></img>          
         </div>
 
-        <Category/>
+        <Category name="azhar"/>
         
         <div className="news-letter">
           <h3>NEWS LETTER</h3>

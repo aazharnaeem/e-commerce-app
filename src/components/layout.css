@@ -60,16 +60,13 @@ li{
   display: flex;
 }
 .product-left{
-  border: solid black 1px;
-  flex: 1;
   margin :5px;
   padding: 5px;
 }
 .product-right{
-  border: solid black 1px;
-  flex: 1;
   background-color: #f5f5f5;
   margin :5px;
+  width: 500px;
 }
 .product-right>table{
   width: 100%;
@@ -96,6 +93,7 @@ li{
 #product-section{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 #product-box{
 
