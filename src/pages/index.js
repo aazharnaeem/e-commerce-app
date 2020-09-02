@@ -19,7 +19,7 @@ const Home = () => {
         <br/>
         <p>DIAL UP THE GLAMOUR IN AN ELEGANT COCKTAIL DRESS</p>
         <br/>
-        <button> VIEW COLLECTIONS</button>
+        <Link to='/product'><button className='cover-btn'> VIEW COLLECTIONS</button></Link>
         </div>
       </div>
 

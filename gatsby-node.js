@@ -18,7 +18,7 @@ exports.createPages = async ({graphql,actions}) => {
               }
             }
           }
-     }
+        }
      `)
 
      result.data.allContentfulProduct.nodes.forEach((data) => {
@@ -30,6 +30,39 @@ exports.createPages = async ({graphql,actions}) => {
             }
         })
      })
+     console.log('ressssssssss--------',JSON.stringify(result));
+
+
+     const bloggg = await graphql(`{
+      allContentfulBlog {
+        nodes {
+          id
+          cover {
+            fluid {
+              src
+            }
+          }
+          title
+          desc
+          slug
+          content {
+            content
+          }
+        }
+      }
+     }
+     `)
+
+     bloggg.data.allContentfulBlog.nodes.forEach((data)=>{
+       createPage({
+         path:`/blogs/${data.slug}`,
+         component: path.resolve('./src/templates/blogTemplate.js'),
+         context:{
+              data: data
+         }
+       })
+     })
 
      console.log('ressssssssss--------',JSON.stringify(result));
+
 }

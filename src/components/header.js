@@ -21,6 +21,7 @@ const Header = () => {
       <Link to="/blog" className="lnk"><b>Blog</b></Link>
       <Link to ="/product" className="lnk"><b>Shop</b></Link>
       <Link to ="/signup" className="lnk"><b>SignIn</b></Link>
+
       <span className="cart-head" role="img" >
   <strong style={{color: "#efefef"}}>  &#128722;CART[<output>{items.count}</output>]</strong>
   </span>
