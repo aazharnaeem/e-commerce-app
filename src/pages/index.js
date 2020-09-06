@@ -11,6 +11,9 @@ import star from '../images/star-icon.png'
 const Home = () => {
   return(
     <Layout>
+      <div>
+      <h1>Checking Netlify deployment Status</h1>
+      </div>
       {/*Cover-Section */}
       <div className="cover">
         <img src={cover} alt="Cover"></img>
