@@ -196,7 +196,10 @@ li{
   width: 100%;
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap; 
+}
+.coll-img{
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .ind-right{
@@ -285,6 +288,7 @@ transition: transform 1.5s ease;
 .cart-add{
   background-color: #202020;
   padding: 5px;
+  margin: 5px;
   color: #efefef;
   margin-top: 10px;
 }

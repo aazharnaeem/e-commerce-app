@@ -9,13 +9,13 @@ import img5 from './category images/collections/ind5.png'
 export const Collection=()=>{
     return(
         <div className="ind-main">
-          <div className="ind1"><Link to="/product"><img src={img1} alt="img"></img></Link> </div>
+          <div className="ind1"><Link to="/product"><img className="coll-img" src={img1} alt="img"></img></Link> </div>
           <div className="ind-right">
-          <div className="ind2"> <Link to="/product"><img src={img2} alt="img"></img></Link></div>
-          <div className="ind3"><Link to="/product"><img src={img3} alt="img"></img></Link></div>
+          <div className="ind2"> <Link to="/product"><img className="coll-img" src={img2} alt="img"></img></Link></div>
+          <div className="ind3"><Link to="/product"><img className="coll-img" src={img3} alt="img"></img></Link></div>
           <div className="ind-both">
-          <div className="ind4"> <Link to="/product"> <img src={img4} alt="img"></img></Link></div>
-          <div className="ind5"> <Link to="/product"> <img src={img5} alt="img"></img></Link></div>
+          <div className="ind4"> <Link to="/product"> <img className="coll-img" src={img4} alt="img"></img></Link></div>
+          <div className="ind5"> <Link to="/product"> <img className="coll-img" src={img5} alt="img"></img></Link></div>
         </div>
         </div>
         </div>

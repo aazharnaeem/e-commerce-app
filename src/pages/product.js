@@ -41,15 +41,15 @@ const Product = ({ data:{Products} }) => {
                   totalprice: Math.floor((item.subTotalPrice) + (item.EcoTax) + (item.Vat))
                 })
               }
-              // const removeItems=()=>{
-              //   setItem({
-              //     count: --item.count,
-              //     subTotalPrice: item.price * item.count,
-              //     EcoTax: Math.floor(item.subTotalPrice*0.02)-Math.floor(item.subTotalPrice*0.02),
+              const removeItems=()=>{
+                setItem({
+                  count: --item.count,
+                  subTotalPrice: item.price * item.count,
+                  EcoTax: Math.floor(item.subTotalPrice*0.02)-Math.floor(item.subTotalPrice*0.02),
 
 
-              //   })
-              // }
+                })
+              }
             
               return (
                     <article key={product.id} id="product-box" >
@@ -60,7 +60,7 @@ const Product = ({ data:{Products} }) => {
                         <Link to={`/products/${product.slug}`} style={{color:"black"}}>More Info</Link>
                         <br/>
                         <button onClick={addItems} className="cart-add">Add To Cart</button>
-                        {/* <button onClick={removeItems}>remove</button> */}
+                        <button onClick={removeItems} className="cart-add">Remove</button>
                     </article>
                 )
         })

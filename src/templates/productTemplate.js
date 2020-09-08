@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout";
 const productTemplate = ({pageContext:{data}}) => {
-    console.log(data);
+    // console.log(data);
     return (
         <Layout>
             <section id="product-template" >

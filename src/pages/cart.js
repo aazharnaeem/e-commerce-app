@@ -4,6 +4,11 @@ import CounterContext from '../context/counterContext'
 
 
 const Cart =()=>{
+
+    const click=()=>{
+        alert('Thank you for shopping with us')
+        prompt('Enter your Name and address please',"Name:Address")
+    }
     let abc = useContext(CounterContext)
         return(
         <div className="product-right">
@@ -54,7 +59,7 @@ const Cart =()=>{
                     <tfoot>
                     <tr>
                         <td colSpan="2">
-                        <button className="cart-out">Check OUT</button>
+                        <button className="cart-out" onClick={click}>Check OUT</button>
                         </td>
                     </tr>
                     </tfoot>
